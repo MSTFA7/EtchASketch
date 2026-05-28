@@ -6,35 +6,7 @@ document.addEventListener("mousedown", () => isMouseDown = true);
 document.addEventListener("mouseup", () => isMouseDown = false);
 const sketchContainer = document.getElementById("sketch-container");
 
-for (let i = 0; i < height; i++) {
-
-    const sketchRow = document.createElement("div");
-    sketchRow.classList.toggle("sketch-row");
-    sketchContainer.appendChild(sketchRow);
-
-    for (let u = 0; u < width; u++) {
-
-        const sketchCell = document.createElement("div");
-        sketchCell.classList.toggle("sketch-cell");
-        sketchRow.appendChild(sketchCell);
-        sketchCell.addEventListener("mouseover", () => {
-            if (isMouseDown) {
-                sketchCell.style.backgroundColor = color;
-            } else {
-                sketchCell.classList.toggle("hovered");
-            }
-        });
-        sketchCell.addEventListener("mouseout", () => {
-            sketchCell.classList.toggle("hovered");
-        });
-
-
-    }
-}
-
-
-
-
+generateGrid();
 
 const slider = document.getElementById("slider")
 slider.addEventListener("input", () => {
