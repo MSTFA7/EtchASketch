@@ -1,0 +1,97 @@
+body {
+    font-family: Montserrat;
+}
+.sketch-row {
+    display: flex;
+    justify-content: stretch;
+    flex-grow: 1;
+    flex: 1;
+}
+
+.sketch-cell {
+    border: 1px solid rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    user-select: none;
+}
+
+.sketch-container {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(55, 55, 55);
+    height: 40rem;
+    width: 40rem;
+    flex: 3;
+    max-width: 40rem;
+}
+
+.hovered {
+    background-color: darkgrey;
+}
+
+h1 {
+    color: rgb(55, 55, 55);
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.middle-section {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.color-palette button{
+    height: 30px;
+    width: 30px;
+    border: 0px;
+    box-shadow: inset 0px 0px 2px;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+
+}
+
+#blue {
+    background-color: blue;
+}
+
+#pink {
+    background-color: pink;
+}
+
+#white {
+    background-color: white;
+}
+
+#black {
+    background-color: black;
+}

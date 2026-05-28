@@ -9,7 +9,29 @@
 </head>
 
 <body>
+    <h1>Etch-A-Sketch</h1>
+    <div class="wrapper">
+        <div class="left-section"></div>
+        <div class="middle-section">
+            <div class="sketch-container" id="sketch-container"></div>
+        </div>
+        <div class="right-section">
 
+            <div class="options"> 
+                <div>Color Palette</div>
+                <div class="color-palette">
+                    <button value="red" id="red"></button>
+                    <button value="green" id="green"></button>
+                    <button value="blue" id="blue"></button>
+                    <button value="pink" id="pink"></button>
+                    <button value="white" id="white"></button>
+                    <button value="black" id="black"></button>
+                </div>
+                <input type="range" min="2" max="100" id="slider" value="16">
+                <button id="clear">Clear All</button>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
